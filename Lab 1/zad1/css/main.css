@@ -1,0 +1,127 @@
+@media ( max-width: 700px ) {
+	section article video {
+		width: 100% !important;
+	}
+}
+
+*{
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+html, form, input, audio, video, #myCanvas, math {
+	padding: 0px;
+}
+
+body {
+	background-color: #323232;
+	min-width: 700px;
+}
+
+header, nav, section, aside, footer {
+	background-color: #666666;
+}
+
+section header, section article, section footer {
+	background-color: #999999;
+}
+
+.round {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.headFoot {
+	height: 100px;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+audio {
+	margin: 0 auto;
+	display: block;
+}
+
+nav {
+	width: 150px;
+}
+
+input {
+	width: 100%;
+}
+
+nav, aside, section {
+	height: 800px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+section {
+	width: calc(100% - 400px);
+	margin-left: 20px;
+}
+
+section header {
+	height: calc(15% - 40px/3);
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+section article {
+	height: calc(70% - 40px/3);
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+section article video {
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+}
+
+section footer {
+	height: calc(15% - 40px/3);
+	width: 100%;
+}
+
+math {
+	display: none;
+	width: 25%;
+	margin-top: 20px;
+}
+
+#mathNonSupported {
+	padding: 20px 0px 0px 0px;
+	display: block;
+}
+
+.safariFirefox math {
+	display: block  !important;
+}
+
+.safariFirefox #mathNonSupported {
+	display: none !important;
+}
+
+aside {
+	overflow: hidden;
+	margin-left: 20px;
+}
+
+aside {
+	width: 210px;
+}
+
+#myCanvas {
+	border:1px solid #999999;
+}
+
+footer {
+	margin-top: 20px;
+}

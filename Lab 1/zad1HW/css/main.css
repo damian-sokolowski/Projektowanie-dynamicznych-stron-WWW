@@ -1,0 +1,109 @@
+body {
+	background-color: #323232 !important;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.bgGrey{
+	margin-bottom: 15px;
+	background-color: #666666;
+}
+
+section header, section article, section footer {
+	background-color: #999999;
+	margin-bottom: 15px;
+}
+
+.round {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.headFoot {
+	height: 100px;
+	padding: 15px 15px;
+}
+
+input {
+	width: 100%;
+}
+
+nav, aside {
+	padding: 15px 0px;
+}
+
+nav, aside, section {
+	height: 800px;
+}
+
+section div {
+	height: 100%;
+	padding: 15px 15px;
+}
+
+section header {
+	height: calc(15% - 30px/3);
+	overflow: auto;
+	padding: 15px 15px;
+}
+
+section article {
+	height: calc(70% - 30px/3);
+	padding: 15px 15px;
+}
+
+section footer {
+	height: calc(15% - 30px/3);
+	padding: 15px 15px;
+}
+
+math {
+	margin: 20px 0px;
+	display: none;
+	text-align: center;
+}
+
+#mathNonSupported {
+	padding-top: 20px;
+	display: block;
+}
+
+.safariFirefox math {
+	display: block  !important;
+}
+
+.safariFirefox #mathNonSupported {
+	display: none !important;
+}
+
+#myCanvas {
+	border:1px solid #999999;
+	margin: 0 auto;
+	display: block;
+}
+
+audio {
+	margin: 0 auto;
+	display: block !important;s
+}
+
+section article video {
+	margin: 0 auto;
+	display: block;
+	clear: both;
+}
+
+@media(max-width: 768px) {
+	section {
+		padding: 0px !important;
+		margin-bottom: 15px;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 1230px) {
+	#myCanvas {
+		width: 100%;
+	}
+}

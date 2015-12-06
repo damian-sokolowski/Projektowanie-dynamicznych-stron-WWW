@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/zad1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<title>Lab 1, Zadanie 1</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="round headFoot bgGrey row">
+			<audio controls>
+				<source src="media/champion.mp3" type="audio/mpeg">
+				Twoja przeglądarka nie wspiera elementu audio.
+			</audio>
+		</header>
+		<div class="row">
+			<nav class="round bgGrey col-sm-2 col-xs-12">
+				<form>
+					Wprowadź liczbę:<br>
+					<input type="number" name="dane">
+				</form>
+
+				<div id="mathNonSupported">
+					Towoja przeglądarka nie obsługuje Mathematical Markup Language (MathML), jeśli chcesz sprawdzić działanie uruchom przeklądarkę wspierającą MathML (Firefox lub Safari)
+				</div>
+
+				<math>
+					<mrow>
+						<mi>ln</mi>
+						<msqrt>
+							<mfrac>
+								<mrow>
+									<mn>1.01</mn>
+									<mo>-</mo>
+									<mi>sin</mi>
+									<mi>x</mi>
+								</mrow>
+								<mrow>
+									<mn>1.01</mn>
+									<mo>+</mo>
+									<mi>sin</mi>
+									<mi>x</mi>
+								</mrow>
+							</mfrac>
+						</msqrt>
+					</mrow>
+				</math>
+
+				<math>
+					<mrow>
+						<mi>arctan</mi>
+						<mfrac>
+							<mrow>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+							<mrow>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+								<mo>&#x002B<!-- plus; --></mo>
+								<mn>1</mn>
+							</mrow>
+						</mfrac>
+					</mrow>
+				</math>
+
+				<math>
+					<mrow>
+						<mfrac>
+							<mrow>
+								<mi>x</mi>
+								<mo>-</mo>
+								<mn>2</mn>
+								<mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+								<mi>sin</mi>
+								<mi>x</mi>
+							</mrow>
+							<msqrt>
+								<mrow>
+									<mn>1</mn>
+									<mo>&#x002B<!-- plus; --></mo>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+							</msqrt>
+						</mfrac>
+					</mrow>
+				</math>
+
+				<math>
+					<mrow>
+						<mfrac>
+							<mrow>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+							<mrow>
+								<mn>1</mn>
+								<mo>+</mo>
+								<mn>2</mn>
+								<mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+						</mfrac>
+					</mrow>
+				</math>
+
+			</nav>
+			<section class="col-sm-8 col-xs-12">
+				<div class="round bgGrey">
+					<header class="round col-lg-12" contenteditable="true">Tu możesz pisać ile chcesz.</header>
+					<article class="round col-lg-12">
+						<video controls class="col-xs-12">
+							<source src="media/mov_bbb.mp4" type="video/mp4">
+							Twoja przeglądarka nie wspiera elementu video.
+						</video>
+					</article>
+					<footer class="round col-lg-12">
+					</footer>
+				</div>
+			</section>
+			<aside class="round bgGrey col-sm-2 col-xs-12">
+				<canvas class="round" id="myCanvas" width="168" height="168" >
+					Twoja przeglądarka nie wspiera tagu canvas.
+				</canvas>
+			</aside>
+		</div>
+		<footer class="round bgGrey headFoot row"></footer>
+	</div>
+</body>
+</html>
