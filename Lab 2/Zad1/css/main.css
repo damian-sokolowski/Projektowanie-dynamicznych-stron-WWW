@@ -1,0 +1,65 @@
+#container {
+	width: 500px;
+	height: auto;
+	min-height: 200px;
+	margin: auto;
+}
+
+.title {
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+
+hr {
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	border-color: black !important;
+}
+
+
+.input-container  {
+	display: block;
+	width: 192px;
+	line-height: 15px;
+	margin: 10px auto;
+	clear: both;
+}
+
+
+.valid-box {
+	width: 15px;
+	height: 15px;
+	margin: 0px 30px;
+	float: left;
+	border: solid 1px #000;
+	border-radius: 100%;;
+}
+
+.error {
+	background-color: #ff0000;
+}
+
+.good {
+	background-color: #33cc33;
+}
+
+.input-container  p {
+	float: left;
+	width: 40px;
+	font-size: 20px;
+}
+
+.input-container input {
+	width: 15px;
+	height: 15px;
+	margin: 0 30px !important;
+}
+
+form footer {
+	display: block;
+	width: 120px;
+	margin: 0 auto;
+}
