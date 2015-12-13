@@ -17,6 +17,7 @@ hr {
 	margin-top: 10px !important;
     margin-bottom: 10px !important;
 	border-color: black !important;
+	width: 500px;
 }
 
 
@@ -42,7 +43,7 @@ hr {
 	background-color: #ff0000;
 }
 
-.good {
+.success {
 	background-color: #33cc33;
 }
 
@@ -60,6 +61,10 @@ hr {
 
 form footer {
 	display: block;
-	width: 120px;
+	width: 135px;
 	margin: 0 auto;
+}
+
+form footer .float {
+	float:left;
 }
