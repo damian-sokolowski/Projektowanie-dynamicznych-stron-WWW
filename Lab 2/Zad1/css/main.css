@@ -5,6 +5,103 @@
 	margin: auto;
 }
 
+#page-1 {
+	display: block;
+}
+
+#page-2 {
+	display: none;
+}
+
+#page-3 {
+	display: none;
+}
+
+
+.valid-box {
+	width: 15px;
+	height: 15px;
+	float: left;
+	border: solid 1px #000;
+	border-radius: 100%;
+}
+
+.input-container p {
+	float: left;
+	font-size: 20px;
+}
+
+.input-container {
+	display: block;
+	margin: 10px auto;
+	clear: both;
+}
+
+#page-1 .input-container  {
+	width: 192px;
+}
+
+#page-1 .valid-box {
+	margin: 3px 30px;
+}
+
+#page-1 p {
+	width: 40px;
+	line-height: 22px;
+}
+
+#page-1 input {
+	width: 15px;
+	height: 15px;
+	margin: 3px 30px;
+}
+
+#page-2 .input-container, #page-3 .input-container {
+	width: 332px;
+}
+
+#page-2 .valid-box, #page-3 .valid-box {
+	margin: 3px 5px;
+}
+
+#page-2 p {
+	width: 130px;
+	line-height: 22px;
+}
+
+#page-2 input, #wojewodztwo {
+	width: 165px;
+	height: 22px;
+	margin: 0 5px
+}
+
+#page-3 p {
+	width: 50px;
+	line-height: 22px;
+}
+
+#page-3 input{
+	   width: 130px;
+	   height: 22px;
+	   margin: 0 5px;
+}
+
+#page-3 #ok {
+	width: 36px;
+	height: 24px;
+	display: block;
+	margin: 0 auto !important;
+}
+
+meter {
+	width: 108px;
+	height: 22px;
+}
+
+meter {
+
+}
+
 .title {
 	width: 100%;
 	height: 22px;
@@ -17,26 +114,6 @@ hr {
 	margin-top: 10px !important;
     margin-bottom: 10px !important;
 	border-color: black !important;
-	width: 500px;
-}
-
-
-.input-container  {
-	display: block;
-	width: 192px;
-	line-height: 15px;
-	margin: 10px auto;
-	clear: both;
-}
-
-
-.valid-box {
-	width: 15px;
-	height: 15px;
-	margin: 0px 30px;
-	float: left;
-	border: solid 1px #000;
-	border-radius: 100%;;
 }
 
 .error {
@@ -47,24 +124,24 @@ hr {
 	background-color: #33cc33;
 }
 
-.input-container  p {
-	float: left;
-	width: 40px;
-	font-size: 20px;
-}
-
-.input-container input {
-	width: 15px;
-	height: 15px;
-	margin: 0 30px !important;
-}
-
-form footer {
+#container footer {
 	display: block;
 	width: 135px;
 	margin: 0 auto;
 }
 
-form footer .float {
+.float, #previous {
 	float:left;
+}
+
+#previous {
+	width: 59px;
+}
+
+#next {
+	width: 75px;
+}
+
+#previous:disabled, #next:disabled {
+	color: gray;
 }
