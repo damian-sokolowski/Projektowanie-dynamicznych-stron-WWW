@@ -1,0 +1,47 @@
+.row {
+    margin: 15px;
+}
+
+#left {
+}
+
+#left p {
+margin-top: 40px;
+}
+
+#right {
+    background-color: #FFFFFF;
+}
+
+table {
+    margin: 53px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+td {
+    height: 24px;
+    width: 130px;
+    padding: 0px 4px;
+    color: #fc0204;
+}
+
+legend {
+    width: 170px;
+    border-bottom: none;
+}
+
+fieldset {
+    padding-bottom: 80px;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    border: 2px groove threedface;
+}
+
+#right, #left {
+    height: 500px;
+}

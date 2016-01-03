@@ -7,6 +7,23 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-
+    <div class="row">
+        <div id="left" class="col-md-3 col-sm-12">
+        <fieldset>
+            <legend>Ustawienia tabelki</legend>
+            <p>Liczba wierszy</p>
+            <input id="rangeRow" type="range" min="2" max="15" value="7">
+            <p>Liczba kolumn</p>
+            <input id="rangeCol" type="range" min="2" max="8" value="4">
+            <p>Kolor 1</p>
+            <input id="colorTop" type="color" value="#FFFF80">
+            <p>Kolor 2</p>
+            <input id="colorBottom" type="color" value="#000040">
+        </fieldset>
+        </div>
+        <div id="right" class="col-md-9 col-sm-12">
+            <table id="table"></table>
+        </div>
+    </div>
 </body>
 </html>
