@@ -2,19 +2,7 @@ $(document).ready(function(){
     var overColor = '';
     buildTable();
 
-    $('#rangeRow').change(function(){
-        buildTable();
-    });
-
-    $('#rangeCol').change(function(){
-        buildTable();
-    });
-
-    $('#colorTop').change(function(){
-        buildTable();
-    });
-
-    $('#colorBottom').change(function(){
+    $('#rangeRow, #rangeCol, #colorTop, #colorBottom').change(function(){
         buildTable();
     });
 
