@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background-color: #b5e61d;
+    padding: 0px;
+}
+
+#win {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 450px;
+    padding: 0 30px;
+    margin: 0;
+    display: none;
+    color: #4888ef;
+    font-size: 94px;
+}
+
+#empty {
+    font-size: 25px;
+    text-align: center;
+    padding: 12px 0px;
+    color: #4888ef;
+}
+
+#scramble {
+    margin: 20px auto;
+    display: block;
+}
+
+.containerImg div{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px 0px 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.containerImg img {
+    position: absolute;
+}
+
+#helperImage {
+    position: absolute;
+    width:  200px;
+    height: 200px;
+    top: 125px;
+    left: -230px;
+}
+
+#img1 {
+    clip: rect(0px,100px,100px,0px);
+    top: 0px;
+    left: 0px;
+}
+
+#img2 {
+    clip: rect(0px,200px,100px,100px);
+    top: 0px;
+    left: -100px;
+}
+
+#img3 {
+    clip: rect(0px,300px,100px,200px);
+    top: 0px;
+    left: -200px;
+}
+
+#img4 {
+    clip: rect(0px,400px,100px,300px);
+    top: 0px;
+    left: -300px;
+}
+
+#img5 {
+    clip: rect(100px,100px,200px,0px);
+    top: -100px;
+    left: 0px;
+}
+
+#img6 {
+    clip: rect(100px,200px,200px,100px);
+    top: -100px;
+    left: -100px;
+}
+
+#img7 {
+    clip: rect(100px,300px,200px,200px);
+    top: -100px;
+    left: -200px;
+}
+
+#img8 {
+    clip: rect(100px,400px,200px,300px);
+    top: -100px;
+    left: -300px;
+}
+
+#img9 {
+    clip: rect(200px,100px,300px,0px);
+    top: -200px;
+    left: 0px;
+}
+
+#img10 {
+    clip: rect(200px,200px,300px,100px);
+    top: -200px;
+    left: -100px;
+}
+
+#img11 {
+    clip: rect(200px,300px,300px,200px);
+    top: -200px;
+    left: -200px;
+}
+
+#img12 {
+    clip: rect(200px,400px,300px,300px);
+    top: -200px;
+    left: -300px;
+}
+
+#img13 {
+    clip: rect(300px,100px,400px,0px);
+    top: -300px;
+    left: 0px;
+}
+
+#img14 {
+    clip: rect(300px,200px,400px,100px);
+    top: -300px;
+    left: -100px;
+}
+
+#img15 {
+    clip: rect(300px,300px,400px,200px);
+    top: -300px;
+    left: -200px;
+}
