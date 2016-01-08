@@ -26,15 +26,16 @@ var buildTable = function() {
     var colorTop = $('#colorTop').val();
     var colorBottom = $('#colorBottom').val();
     var bgColorArray = bgColor(colorTop, colorBottom, col, row);
-
+    var k = 0;
     var table = '';
     for (var i = 0; i <= row-1; i++) {
         table += '<tr>';
         for (var j = 0; j <= col-1; j++) {
             table += '<td style="background-color: rgb(' +
-                bgColorArray[0][i] + ', ' + bgColorArray[1][j] + ', ' + bgColorArray[2] + ')">' +
-                'rgb(' + bgColorArray[0][i] + ', ' + bgColorArray[1][j] + ', ' + bgColorArray[2] + ')' +
+                bgColorArray[0][i] + ', ' + bgColorArray[1][j] + ', ' + bgColorArray[2][k] + ')">' +
+                'rgb(' + bgColorArray[0][i] + ', ' + bgColorArray[1][j] + ', ' + bgColorArray[2][k] + ')' +
                 '</td>';
+            k += 1;
         }
         table += '</tr>';
     }
@@ -47,6 +48,8 @@ var bgColor = function(colorTop, colorBottom, col, row) {
     var colorTmp = [ (colorT[0] - colorB[0])/(row-1), (colorT[1] - colorB[1])/(col-1) ];
     var colorRow = [];
     var colorCol = [];
+    var colorBlue = [];
+    var blueTmp = (colorB[2]-colorT[2]) / (col * row - 1);
 
     for (var i = 0; i <= row-1; i++) {
         colorRow.push(parseInt(colorT[0] - colorTmp[0] * i));
@@ -54,8 +57,9 @@ var bgColor = function(colorTop, colorBottom, col, row) {
             if ( col > colorCol.length ) {
                 colorCol.push(parseInt(colorT[1] - colorTmp[1] * j));
             }
+            colorBlue.push(parseInt(colorT[2] + (blueTmp * (i+1) * (j+1) - blueTmp)));
         }
     }
 
-    return [colorRow, colorCol, Math.abs(colorT[2]-colorB[2])];
+    return [colorRow, colorCol, colorBlue];
 }
