@@ -1,0 +1,1 @@
+YUI().use('moodle-theme_bootstrapbase-bootstrap',function(Y){Y.Moodle.theme_bootstrapbase.bootstrap.init()})
