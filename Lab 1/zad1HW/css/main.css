@@ -19,6 +19,7 @@ section header, section article, section footer {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	overflow: hidden;
 }
 
 .headFoot {
@@ -99,6 +100,10 @@ section article video {
 	section {
 		padding: 0px !important;
 		margin-bottom: 15px;
+	}
+
+	nav, aside, section {
+		height: auto;
 	}
 }
 
